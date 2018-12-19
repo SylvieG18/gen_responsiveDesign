@@ -1,0 +1,16 @@
+body{
+    margin: auto;
+}
+.d1, .d2, .d4, .d5, .d6, .d8, .d9, .d10, .d11, .d12{
+    height: 100px;
+    line-height: 100px;
+}
+.d3, .d7 {
+    height: 200px;
+    line-height: 200px;
+}
+div{
+    /* text-align: center; */     /* class text-center sur HTML */
+    font-size: 1.5em;
+    
+}

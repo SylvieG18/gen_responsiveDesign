@@ -1,0 +1,131 @@
+body{
+    margin: auto;
+}
+#blocPage{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.d1, .d2, .d4, .d5, .d6, .d8, .d9, .d10, .d11, .d12{
+    height: 100px;
+    line-height: 100px;
+}
+.d3, .d7 {
+    height: 200px;
+    line-height: 200px;
+}
+div{
+    text-align: center;
+    font-size: 1.5em;
+    
+}
+/* couleur de fond des div */
+.d1, .d11{
+    background-color: rgb(0, 102, 255);
+}
+.d2, .d8{
+     background-color: rgb(40, 110, 40);
+}
+.d3, .d6{
+    background-color: rgb(255, 208, 0);
+}
+.d4, .d9{
+    background-color: rgb(104, 101, 101);
+}
+.d5, .d10{
+    background-color: rgb(187, 30, 56);
+}
+.d7{
+    background-color: rgb(40, 155, 201);
+}
+.d12{
+    background-color: rgb(61, 59, 59);
+}
+
+/* largeurs des div et des sections pour version mobile */
+.d1, .d5, .d6, .d9, .d10, .d11{
+    width: 50%;
+}
+.d2, .d3, .d4, .d7, .d8, .d12{
+    width: 100%;
+}
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+
+/* largeurs des div et des sections pour version desktop  */
+@media only screen and (min-width: 600px){
+    #n1{
+        width: 60%;
+    }
+    .d1, .d5{
+        width: 34%;
+    }
+    .d2, .d4{
+        width: 66%;
+    }
+
+    #n2, #n4, #n5{
+        width: 40%;
+    }
+    #n3{
+        width: 20%;
+    }
+    #n6{
+        width: 100%;
+    }
+    .d3, .d6, .d7, .d8, .d9, .d12{
+        width: 100%;
+    }
+    
+    .d10, d11{
+        width: 50%;
+    }
+}
+
+/* ordre des div et des sections pour version mobile */
+@media only screen and (max-width: 600px){
+    /* section n1 */
+    .d1, #n2{
+        order: 2;
+    }
+    .d2, #n1{
+        order: 1;
+    }
+    .d4, #n3{
+        order:4;
+    }
+    .d5, #n4{
+        order:3;
+    }
+    /* section n2 : 1 seule div */
+    /* section n3 : reste dans l'ordre*/
+    /* section n4 : 1 seul div */
+    /* section n5 */
+    .d8{
+        order:3;
+    }
+    .d10{
+        order:2;
+    }
+    .d11{
+        order:1;
+    }
+    /* section n6 : 1 seul div */
+    #n5{
+        order:5;
+    }
+    #n6{
+        order:6;
+    }
+
+}
+
